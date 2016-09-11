@@ -6,7 +6,7 @@ This project enables a new feature for installing Apache FOP 2.1 in Apache Servi
 ## Installation guide
 1. The first step is to uninstall the camel-fop feature in case you have it installed.
 ```sh
-karaf@root>features:uninstall trikora-fop/2.14.3_b
+karaf@root>features:uninstall camel-fop
 ```
 2. Download the corresponding feature file to a folder named _feature-repository_ in your Apache Servicemix folder.
 3. Open the Apacher Servicemix Console
