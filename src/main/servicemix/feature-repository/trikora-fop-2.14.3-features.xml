@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0" name='trikora-fop-2.14.3'>
+  <feature name='trikora-fop' version='2.14.3_a' resolver='(obr)' start-level='50'>
+    <feature version='2.14.3'>camel-fop</feature>
+  </feature>
+
+  <feature name='trikora-fop' version='2.14.3_b' resolver='(obr)' start-level='50'>
+    <bundle>mvn:commons-io/commons-io/1.4</bundle>
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlresolver/1.2_5</bundle>
+    <!--<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xerces/2.11.0_1</bundle>-->
+    <!--<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xalan/2.7.2_1</bundle>-->
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.avalon-framework/4.3.1_1</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-svg-dom/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-svg-dom&amp;Bundle-Version=1.8</bundle>
+    <bundle dependency="true">wrap:mvn:xml-apis/xml-apis/1.3.04$Bundle-SymbolicName=xml-apis&amp;Bundle-Version=1.3.04</bundle>
+    <bundle dependency="true">wrap:mvn:xml-apis/xml-apis-ext/1.3.04$Bundle-SymbolicName=xml-apis-ext&amp;Bundle-Version=1.3.04</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-anim/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-anim&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-css/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-css&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-dom/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-dom&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-parser/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-parser&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-util/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-util&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-bridge/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-bridge&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-script/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-script&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-js/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-js&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-xml/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-xml&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-awt-util/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-awt-util&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-gvt/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-gvt&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-transcoder/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-transcoder&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-svggen/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-svggen&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-extension/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-extension&amp;Bundle-Version=1.8</bundle>
+    <bundle>wrap:mvn:org.apache.xmlgraphics/batik-ext/1.8$Bundle-SymbolicName=org.apache.xmlgraphics.batik-ext&amp;Bundle-Version=1.8</bundle>
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.bcel/5.2_4</bundle>
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlgraphics-commons/2.1_1</bundle>
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.fop/2.1_1</bundle>
+<!--    
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlgraphics-commons/1.5_1</bundle>
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.fop/1.1_1</bundle>
+    <bundle>mvn:org.apache.camel/camel-fop/2.14.3</bundle>-->
+  </feature>
+
+</features>
